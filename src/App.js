@@ -8,7 +8,7 @@ function App() {
   let [artId, setArtId] = useState(12770)
 
   useEffect(() => {
-    document.title='Welcome to ArtWorld'
+    document.title='ArtWorld Lesson'
     fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${artId}`)
     .then(response => response.json())
     .then(resdata => setData(resdata))
