@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import dataReducer from './features/dataSlice'
-import { logger } from './features/middleware'
+import dataReducer from './Components/dataSlice'
+import { logger } from './Components/middleware'
 
 export const store = configureStore({
     reducer: {
